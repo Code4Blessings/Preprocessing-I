@@ -74,6 +74,10 @@ html, body {
 
 body {
 	background-color: black;
+	/* mobile version */
+	@media screen and (max-width: 500px) {
+		background-color: @fontColor;
+	}
 }
 
 header {
@@ -94,8 +98,16 @@ header {
 		font-size: 20px;
 		.displayFlex();
 
+		@media screen and (max-width: 500px) {
+			color: black
+		}
+
 		&:hover {
 			color: @fontColor;
+
+			@media screen and (max-width: 500px) {
+				color: #fff;
+			}
 		}
 	}
 	
@@ -112,6 +124,10 @@ p {
 	font-size: 20px;
 	font-family: 'Montserrat',sans-serif;
 	line-height: 1.5;
+
+	@media screen and (max-width: 500px) {
+		color: black;
+	}
 }
 
 h4 {

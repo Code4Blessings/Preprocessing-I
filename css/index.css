@@ -146,6 +146,12 @@ body {
 /* Variables */
 body {
   background-color: black;
+  /* mobile version */
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-color: #ff5757;
+  }
 }
 header {
   width: 100%;
@@ -166,8 +172,18 @@ header a {
   display: flex;
   justify-content: space-evenly;
 }
+@media screen and (max-width: 500px) {
+  header a {
+    color: black;
+  }
+}
 header a:hover {
   color: #ff5757;
+}
+@media screen and (max-width: 500px) {
+  header a:hover {
+    color: #fff;
+  }
 }
 img {
   width: 100%;
@@ -178,6 +194,11 @@ p {
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
+}
+@media screen and (max-width: 500px) {
+  p {
+    color: black;
+  }
 }
 h4 {
   color: #fff;
